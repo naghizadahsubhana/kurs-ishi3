@@ -1,0 +1,127 @@
+@import "variables";
+@import "mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  .image {
+    width: 20px;
+    margin: 5px;
+  }
+  .image-hover {
+    &:hover {
+      border: 3px solid #4169e1;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+
+  .container {
+    width: 80%;
+    min-height: 600px;
+    background-color: #00bfff;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+    .row {
+      width: 90%;
+      background-color: #00008b;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .container1 {
+        .text,
+        .box2 {
+            padding-top: 70px;
+          margin-left: 50px;
+          @include mobile {
+            padding-top: 0 !important;
+            margin-left:0  !important;
+          }
+        }
+
+
+        .box1 {
+          padding-top: 70px;
+          margin-left: 50px;
+          @include mobile {
+            padding-top: 0 !important;
+            margin-left:0  !important;
+          }
+          .message {
+            border: 3px solid #4169e1;
+            border-radius: 8px;
+          }
+          ul {
+            li {
+              padding: 10px 20px;
+              @include mobile{
+                padding:10px 0px;
+              }
+            }
+          }
+        }
+
+        .box2 {
+          ul {
+            display: flex;
+            flex-direction: row;
+            li {
+              margin-left: 50px;
+              @include mobile{
+                  margin-left:30px !important;
+              }
+            }
+          }
+        }
+      }
+      .container2 {
+        background-color: white;
+        padding-top: 70px;
+        margin: 10px 40px;
+        border-radius: 15px;
+        color: black;
+        position: relative;
+        @include mobile{
+            padding: 0px 20px;
+            margin: 0;
+        }
+      }
+
+      .form-group {
+        position: relative;
+        margin-top: 20px;
+        .input-image {
+          width: 20px;
+          position: absolute;
+          margin: 5px;
+          top: 36px;
+          left: 5px;
+        }
+        .span {
+          width: 20px;
+          position: absolute;
+          margin: 5px;
+          top: 30px;
+          left: 45px;
+        }
+
+        .message {
+          padding: 50px 20px;
+        }
+      }
+      .button {
+        text-align: right;
+      }
+    }
+  }
+}

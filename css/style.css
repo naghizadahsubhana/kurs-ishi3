@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .image {
+  width: 20px;
+  margin: 5px;
+}
+
+body .image-hover:hover {
+  border: 3px solid #4169e1;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body .container {
+  width: 80%;
+  min-height: 600px;
+  background-color: #00bfff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+body .container .row {
+  width: 90%;
+  background-color: #00008b;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .row .container1 .text,
+body .container .row .container1 .box2 {
+  padding-top: 70px;
+  margin-left: 50px;
+}
+
+@media (max-width: 767px) {
+  body .container .row .container1 .text,
+  body .container .row .container1 .box2 {
+    padding-top: 0 !important;
+    margin-left: 0  !important;
+  }
+}
+
+body .container .row .container1 .box1 {
+  padding-top: 70px;
+  margin-left: 50px;
+}
+
+@media (max-width: 767px) {
+  body .container .row .container1 .box1 {
+    padding-top: 0 !important;
+    margin-left: 0  !important;
+  }
+}
+
+body .container .row .container1 .box1 .message {
+  border: 3px solid #4169e1;
+  border-radius: 8px;
+}
+
+body .container .row .container1 .box1 ul li {
+  padding: 10px 20px;
+}
+
+@media (max-width: 767px) {
+  body .container .row .container1 .box1 ul li {
+    padding: 10px 0px;
+  }
+}
+
+body .container .row .container1 .box2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .container .row .container1 .box2 ul li {
+  margin-left: 50px;
+}
+
+@media (max-width: 767px) {
+  body .container .row .container1 .box2 ul li {
+    margin-left: 30px !important;
+  }
+}
+
+body .container .row .container2 {
+  background-color: white;
+  padding-top: 70px;
+  margin: 10px 40px;
+  border-radius: 15px;
+  color: black;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  body .container .row .container2 {
+    padding: 0px 20px;
+    margin: 0;
+  }
+}
+
+body .container .row .form-group {
+  position: relative;
+  margin-top: 20px;
+}
+
+body .container .row .form-group .input-image {
+  width: 20px;
+  position: absolute;
+  margin: 5px;
+  top: 36px;
+  left: 5px;
+}
+
+body .container .row .form-group .span {
+  width: 20px;
+  position: absolute;
+  margin: 5px;
+  top: 30px;
+  left: 45px;
+}
+
+body .container .row .form-group .message {
+  padding: 50px 20px;
+}
+
+body .container .row .button {
+  text-align: right;
+}
+/*# sourceMappingURL=style.css.map */
